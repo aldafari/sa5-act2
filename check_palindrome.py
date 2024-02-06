@@ -5,9 +5,5 @@ def check_palindrome(text):
         print(f"{text} is not a palindrome")
 
 
-try:
-    filepath = input("Enter filepath for palindrome check: ")
-    text = open(filepath, "r").read()
-    check_palindrome(text)
-except OSError:
-    print(f"Unable to process file at {filepath}")
+text = "did"
+check_palindrome(text)
